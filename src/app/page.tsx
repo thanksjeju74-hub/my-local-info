@@ -67,6 +67,12 @@ export default function HomePage() {
             >
               🎁 지원금·혜택
             </a>
+            <Link
+              href="/blog"
+              className="px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-orange-700 bg-orange-100/70 hover:bg-orange-200/80 transition-colors"
+            >
+              📝 블로그
+            </Link>
           </nav>
         </div>
       </header>
