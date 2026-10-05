@@ -22,8 +22,8 @@ function getToday() {
 
 // [1단계] 가장 최근에 추가된 항목 꺼내기
 // - 배열 형식이면 배열의 마지막 항목
-// - { events: [], benefits: [] } 형식이면, 숫자 id가 가장 큰 항목(= 가장 최근에 추가된 항목)
-//   숫자 id가 없으면 benefits → events 순서로 마지막 항목
+// - { events: [], benefits: [] } 형식이면, addedAt(추가 시각)이 가장 늦은 항목(= 가장 최근에 추가된 항목)
+//   addedAt이 있는 항목이 없으면 benefits → events 순서로 마지막 항목
 function getLatestItem(data) {
   if (Array.isArray(data)) return data[data.length - 1];
 
@@ -31,9 +31,9 @@ function getLatestItem(data) {
   const benefits = data.benefits || [];
   const all = [...events, ...benefits];
 
-  const numbered = all.filter((item) => typeof item.id === 'number');
-  if (numbered.length > 0) {
-    return numbered.reduce((a, b) => (b.id > a.id ? b : a));
+  const withTime = all.filter((item) => item.addedAt);
+  if (withTime.length > 0) {
+    return withTime.reduce((a, b) => (b.addedAt > a.addedAt ? b : a));
   }
   return benefits[benefits.length - 1] || events[events.length - 1];
 }

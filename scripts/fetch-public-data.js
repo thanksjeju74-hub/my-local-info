@@ -119,8 +119,16 @@ async function main() {
     // [3단계] 새 항목 1개만 Gemini로 가공
     const processed = await processWithGemini(newItems[0]);
 
-    // id가 기존 항목과 겹치지 않도록 다음 번호로 지정
-    processed.id = existingItems.length + 1;
+    // id는 사이트 주소(/info/[id])에 쓰이므로 반드시 "글자"여야 함
+    // 기존 형식에 맞춰 "event-번호" 또는 "benefit-번호"로 만들고, 겹치지 않을 때까지 번호를 올림
+    const prefix = processed.category === '행사' ? 'event' : 'benefit';
+    const usedIds = new Set(existingItems.map((item) => String(item.id)));
+    let num = 1;
+    while (usedIds.has(`${prefix}-${num}`)) num++;
+    processed.id = `${prefix}-${num}`;
+
+    // 언제 추가됐는지 기록 (블로그 글 스크립트가 가장 최근 항목을 찾을 때 사용)
+    processed.addedAt = new Date().toISOString();
 
     // [4단계] 기존 데이터에 추가해서 저장
     if (Array.isArray(existing)) {

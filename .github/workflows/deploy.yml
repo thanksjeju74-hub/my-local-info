@@ -55,11 +55,7 @@ jobs:
             git push
           fi
 
+      # 빌드가 깨지지 않는지 확인하는 단계
+      # (실제 배포는 GitHub와 연결된 Cloudflare Worker가 main push를 감지해서 자동으로 진행)
       - name: Build
         run: npm run build
-
-      - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy out --project-name=my-local-info
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

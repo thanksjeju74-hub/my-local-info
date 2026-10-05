@@ -77,7 +77,8 @@
       "status": "연중 신청"
     },
     {
-      "id": 6,
+      "id": "benefit-3",
+      "addedAt": "2026-10-05T12:20:44.000Z",
       "name": "유아학비 (누리과정) 지원",
       "category": "혜택",
       "startDate": "2026-10-05",
@@ -88,7 +89,8 @@
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/000000465790"
     },
     {
-      "id": 7,
+      "id": "benefit-4",
+      "addedAt": "2026-10-05T12:32:41.000Z",
       "name": "근로·자녀장려금",
       "category": "혜택",
       "startDate": "2026-10-05",
