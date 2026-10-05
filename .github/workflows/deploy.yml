@@ -4,6 +4,13 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # 매일 한국시간 오전 7시 (UTC 22시)
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
@@ -15,11 +22,38 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
           cache: npm
 
       - name: Install dependencies
         run: npm ci
+
+      # ↓ schedule / workflow_dispatch 실행 시에만 동작 (push 시에는 건너뜀)
+      - name: Fetch public data
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: node scripts/fetch-public-data.js
+        env:
+          PUBLIC_DATA_API_KEY: ${{ secrets.PUBLIC_DATA_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Generate blog post
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: node scripts/generate-blog-post.js
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Commit and push changes
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "변경사항이 없습니다"
+          else
+            git commit -m "자동 업데이트: 공공데이터 수집 및 블로그 글 생성"
+            git push
+          fi
 
       - name: Build
         run: npm run build
