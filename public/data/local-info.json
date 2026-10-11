@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10",
+  "updatedAt": "2026-10-11",
   "region": "성남시",
   "events": [
     {
@@ -111,6 +111,18 @@
       "summary": "일정요건의 월세대출 대상자에게 월세자금보증을 지원",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/116010000001",
       "addedAt": "2026-10-10T01:25:28.413Z"
+    },
+    {
+      "id": "benefit-6",
+      "name": "친환경 에너지절감장비 보급",
+      "category": "혜택",
+      "startDate": "2026-10-11",
+      "endDate": "상시",
+      "location": "해양수산부",
+      "target": "어선의 기관, 고효율 등(燈)(집어등, 작업등) 외 에너지 절감 장비의 대체 또는 설치 희망하는 연근해 허가를 가진 어업인",
+      "summary": "연근해 어업인을 대상으로 노후기관, 장비, 설비를 대체 보급",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000001",
+      "addedAt": "2026-10-11T00:36:17.007Z"
     }
   ]
 }
