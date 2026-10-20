@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17",
+  "updatedAt": "2026-10-20",
   "region": "성남시",
   "events": [
     {
@@ -171,6 +171,18 @@
       "summary": "귀어업 지원자에 창업 및 주택구입 자금 지원 (융자 후 이자 차이를 지원)",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000012",
       "addedAt": "2026-10-17T00:04:41.773Z"
+    },
+    {
+      "id": "benefit-11",
+      "name": "원양어업 경영자금 지원",
+      "category": "혜택",
+      "startDate": "2026-10-20",
+      "endDate": "상시",
+      "location": "해양수산부",
+      "target": "원양어업허가를 받은 자 또는 외국인과 합작하여 설립한 해외현지법인으로 원양어업 신고를 한 자",
+      "summary": "원양어업을 허가받은 자 또는 해외합작 원양어업 신고자를 대상으로 원양어업경영자금 융자 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000016",
+      "addedAt": "2026-10-20T00:50:42.049Z"
     }
   ]
 }
