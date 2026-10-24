@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23",
+  "updatedAt": "2026-10-24",
   "region": "성남시",
   "events": [
     {
@@ -207,6 +207,18 @@
       "summary": "산지위판장 등을 대상으로 어대금 결제자금, 직거래 자금 등에 대한 융자지원",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000027",
       "addedAt": "2026-10-23T00:17:01.089Z"
+    },
+    {
+      "id": "benefit-14",
+      "name": "수산경영인회생자금",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-10",
+      "location": "해양수산부",
+      "target": "어업경영체(어업인, 어업법인 등)",
+      "summary": "어려움에 빠진 어업경영체를 대상으로 수산경영회생자금 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000044",
+      "addedAt": "2026-10-24T23:53:34.035Z"
     }
   ]
 }
