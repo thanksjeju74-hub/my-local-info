@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-30",
   "region": "성남시",
   "events": [
     {
@@ -219,6 +219,18 @@
       "summary": "어려움에 빠진 어업경영체를 대상으로 수산경영회생자금 지원",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000044",
       "addedAt": "2026-10-24T23:53:34.035Z"
+    },
+    {
+      "id": "benefit-15",
+      "name": "어업경영자금 지원",
+      "category": "혜택",
+      "startDate": "2026-10-30",
+      "endDate": "상시",
+      "location": "해양수산부",
+      "target": "어업경영체(어업인, 어업법인 등)",
+      "summary": "어업인 및 어업법인을 대상으로 저금리(2.0~3% 또는 변동) 운영자금 지원",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=999217&bnefType=all&svcId=119200000045",
+      "addedAt": "2026-10-30T01:29:26.147Z"
     }
   ]
 }
