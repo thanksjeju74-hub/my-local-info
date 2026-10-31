@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-10-31",
   "region": "성남시",
   "events": [
     {
@@ -231,6 +231,18 @@
       "summary": "어업인 및 어업법인을 대상으로 저금리(2.0~3% 또는 변동) 운영자금 지원",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=999217&bnefType=all&svcId=119200000045",
       "addedAt": "2026-10-30T01:29:26.147Z"
+    },
+    {
+      "id": "benefit-16",
+      "name": "TAC 참여어업인 경영개선자금 지원",
+      "category": "혜택",
+      "startDate": "2026-10-31",
+      "endDate": "상시",
+      "location": "해양수산부",
+      "target": "TAC 참여 어업인(단, 제주도 소라 채취 어업인은 및 TAC 참여 1단계 어업인은 제외)",
+      "summary": "TAC 참여 어업인에게 경영개선자금 융자지원",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=519397&bnefType=all&svcId=119200000053",
+      "addedAt": "2026-10-31T01:19:32.000Z"
     }
   ]
 }
