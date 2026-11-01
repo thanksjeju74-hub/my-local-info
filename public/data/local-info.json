@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31",
+  "updatedAt": "2026-11-01",
   "region": "성남시",
   "events": [
     {
@@ -243,6 +243,18 @@
       "summary": "TAC 참여 어업인에게 경영개선자금 융자지원",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=519397&bnefType=all&svcId=119200000053",
       "addedAt": "2026-10-31T01:19:32.000Z"
+    },
+    {
+      "id": "benefit-17",
+      "name": "연안선박 현대화 지원",
+      "category": "혜택",
+      "startDate": "2026-11-01",
+      "endDate": "상시",
+      "location": "해양수산부",
+      "target": "해운법에 따른 내항여객운송사업자, 내항화물운송사업자, 선박대여업자",
+      "summary": "해운법에 따른 내항운송사업자 등에게 연안선박 건조를 위한 대출이자의 2.0~2.5% 지원",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=519891&bnefType=all&svcId=119200000055",
+      "addedAt": "2026-11-01T00:36:43.018Z"
     }
   ]
 }
